@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Whiskers",
+    "description": "Whiskers is een nieuwsgierige en speelse Maine Coon kat.",
+    "age": 3,
+    "activeStatus": true,
+    "birthDate": "2021-01-15",
+    "profileImageUrl": "https://example.com/images/whiskers.jpg",
+    "breed": "Maine Coon",
+    "hobbies": ["klimmen", "jagen", "spelen met speelgoed"],
+    "owner": {
+      "id": 201,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "+123456789",
+      "address": "123 Kattenlaan, Miauwstad, Nederland"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Mittens",
+    "description": "Mittens is een relaxte en knuffelige Britse Korthaar kat.",
+    "age": 5,
+    "activeStatus": false,
+    "birthDate": "2019-03-22",
+    "profileImageUrl": "https://example.com/images/mittens.jpg",
+    "breed": "Britse Korthaar",
+    "hobbies": ["slapen", "knuffelen", "vogels kijken"],
+    "owner": {
+      "id": 202,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "phone": "+987654321",
+      "address": "456 Poesstraat, Miauwstad, Nederland"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Shadow",
+    "description": "Shadow is een verlegen maar zeer loyale Siamese kat.",
+    "age": 2,
+    "activeStatus": true,
+    "birthDate": "2022-05-10",
+    "profileImageUrl": "https://example.com/images/shadow.jpg",
+    "breed": "Siamese",
+    "hobbies": ["verstoppen", "hoogtes verkennen", "muisjes vangen"],
+    "owner": {
+      "id": 203,
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "phone": "+123098456",
+      "address": "789 Tijgerstraat, Miauwstad, Nederland"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Bella",
+    "description": "Bella is een elegante en speelse Bengaal kat.",
+    "age": 4,
+    "activeStatus": true,
+    "birthDate": "2020-08-05",
+    "profileImageUrl": "https://example.com/images/bella.jpg",
+    "breed": "Bengaal",
+    "hobbies": ["rennen", "klimmen", "met water spelen"],
+    "owner": {
+      "id": 204,
+      "name": "Bob Brown",
+      "email": "bob.brown@example.com",
+      "phone": "+456789123",
+      "address": "101 Leeuwenstraat, Miauwstad, Nederland"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Luna",
+    "description": "Luna is een lieve en nieuwsgierige Noorse Boskat.",
+    "age": 3,
+    "activeStatus": true,
+    "birthDate": "2021-11-17",
+    "profileImageUrl": "https://example.com/images/luna.jpg",
+    "breed": "Noorse Boskat",
+    "hobbies": ["klimmen", "vissen kijken", "door de tuin wandelen"],
+    "owner": {
+      "id": 205,
+      "name": "Charlie Davis",
+      "email": "charlie.davis@example.com",
+      "phone": "+321654987",
+      "address": "202 Katersplein, Miauwstad, Nederland"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Simba",
+    "description": "Simba is een avontuurlijke en dappere Sphynx kat.",
+    "age": 4,
+    "activeStatus": true,
+    "birthDate": "2020-02-14",
+    "profileImageUrl": "https://example.com/images/simba.jpg",
+    "breed": "Sphynx",
+    "hobbies": ["zonnebaden", "op ontdekkingstocht gaan", "met ballen spelen"],
+    "owner": {
+      "id": 206,
+      "name": "Danielle Evans",
+      "email": "danielle.evans@example.com",
+      "phone": "+654321987",
+      "address": "303 Kattengracht, Miauwstad, Nederland"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Oliver",
+    "description": "Oliver is een slimme en speelse Ragdoll kat.",
+    "age": 3,
+    "activeStatus": true,
+    "birthDate": "2021-04-09",
+    "profileImageUrl": "https://example.com/images/oliver.jpg",
+    "breed": "Ragdoll",
+    "hobbies": ["speuren", "rollen op de grond", "pluche speelgoed"],
+    "owner": {
+      "id": 207,
+      "name": "Eve Ford",
+      "email": "eve.ford@example.com",
+      "phone": "+789123456",
+      "address": "404 Kattenpad, Miauwstad, Nederland"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Daisy",
+    "description": "Daisy is een liefdevolle en speelse Perzische kat.",
+    "age": 5,
+    "activeStatus": true,
+    "birthDate": "2019-06-30",
+    "profileImageUrl": "https://example.com/images/daisy.jpg",
+    "breed": "Perzische",
+    "hobbies": ["slapen", "spinnen", "met veren spelen"],
+    "owner": {
+      "id": 208,
+      "name": "Frank Green",
+      "email": "frank.green@example.com",
+      "phone": "+987321654",
+      "address": "505 Kittystraat, Miauwstad, Nederland"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Charlie",
+    "description": "Charlie is een actieve en nieuwsgierige Abessijn kat.",
+    "age": 2,
+    "activeStatus": true,
+    "birthDate": "2022-09-01",
+    "profileImageUrl": "https://example.com/images/charlie.jpg",
+    "breed": "Abessijn",
+    "hobbies": ["rennen", "spelen met andere katten", "kattenbomen beklimmen"],
+    "owner": {
+      "id": 209,
+      "name": "George Harris",
+      "email": "george.harris@example.com",
+      "phone": "+654789321",
+      "address": "606 Poesplein, Miauwstad, Nederland"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Loki",
+    "description": "Loki is een ondeugende en slimme Scottish Fold kat.",
+    "age": 3,
+    "activeStatus": true,
+    "birthDate": "2021-12-25",
+    "profileImageUrl": "https://example.com/images/loki.jpg",
+    "breed": "Scottish Fold",
+    "hobbies": ["klimmen", "met lasers spelen", "vogels bespieden"],
+    "owner": {
+      "id": 210,
+      "name": "Hannah Johnson",
+      "email": "hannah.johnson@example.com",
+      "phone": "+321987654",
+      "address": "707 Kattenweg, Miauwstad, Nederland"
+    }
+  }
+]
