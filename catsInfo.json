@@ -6,7 +6,7 @@
     "age": 3,
     "activeStatus": true,
     "birthDate": "2021-01-15",
-    "profileImageUrl": "https://example.com/images/whiskers.jpg",
+    "profileImageUrl": "https://raw.githubusercontent.com/LennyCra/Webontwikkeling-Katten/main/images/1.png",
     "breed": "Maine Coon",
     "hobbies": ["klimmen", "jagen", "spelen met speelgoed"],
     "owner": {
@@ -24,7 +24,7 @@
     "age": 5,
     "activeStatus": false,
     "birthDate": "2019-03-22",
-    "profileImageUrl": "https://example.com/images/mittens.jpg",
+    "profileImageUrl": "https://raw.githubusercontent.com/LennyCra/Webontwikkeling-Katten/main/images/2.png",
     "breed": "Britse Korthaar",
     "hobbies": ["slapen", "knuffelen", "vogels kijken"],
     "owner": {
@@ -42,7 +42,7 @@
     "age": 2,
     "activeStatus": true,
     "birthDate": "2022-05-10",
-    "profileImageUrl": "https://example.com/images/shadow.jpg",
+    "profileImageUrl": "https://raw.githubusercontent.com/LennyCra/Webontwikkeling-Katten/main/images/3.png",
     "breed": "Siamese",
     "hobbies": ["verstoppen", "hoogtes verkennen", "muisjes vangen"],
     "owner": {
@@ -60,7 +60,7 @@
     "age": 4,
     "activeStatus": true,
     "birthDate": "2020-08-05",
-    "profileImageUrl": "https://example.com/images/bella.jpg",
+    "profileImageUrl": "https://raw.githubusercontent.com/LennyCra/Webontwikkeling-Katten/main/images/4.png",
     "breed": "Bengaal",
     "hobbies": ["rennen", "klimmen", "met water spelen"],
     "owner": {
@@ -78,7 +78,7 @@
     "age": 3,
     "activeStatus": true,
     "birthDate": "2021-11-17",
-    "profileImageUrl": "https://example.com/images/luna.jpg",
+    "profileImageUrl": "https://raw.githubusercontent.com/LennyCra/Webontwikkeling-Katten/main/images/5.png",
     "breed": "Noorse Boskat",
     "hobbies": ["klimmen", "vissen kijken", "door de tuin wandelen"],
     "owner": {
@@ -96,7 +96,7 @@
     "age": 4,
     "activeStatus": true,
     "birthDate": "2020-02-14",
-    "profileImageUrl": "https://example.com/images/simba.jpg",
+    "profileImageUrl": "https://raw.githubusercontent.com/LennyCra/Webontwikkeling-Katten/main/images/6.png",
     "breed": "Sphynx",
     "hobbies": ["zonnebaden", "op ontdekkingstocht gaan", "met ballen spelen"],
     "owner": {
@@ -114,7 +114,7 @@
     "age": 3,
     "activeStatus": true,
     "birthDate": "2021-04-09",
-    "profileImageUrl": "https://example.com/images/oliver.jpg",
+    "profileImageUrl": "https://raw.githubusercontent.com/LennyCra/Webontwikkeling-Katten/main/images/7.png",
     "breed": "Ragdoll",
     "hobbies": ["speuren", "rollen op de grond", "pluche speelgoed"],
     "owner": {
@@ -132,7 +132,7 @@
     "age": 5,
     "activeStatus": true,
     "birthDate": "2019-06-30",
-    "profileImageUrl": "https://example.com/images/daisy.jpg",
+    "profileImageUrl": "https://raw.githubusercontent.com/LennyCra/Webontwikkeling-Katten/main/images/8.png",
     "breed": "Perzische",
     "hobbies": ["slapen", "spinnen", "met veren spelen"],
     "owner": {
@@ -150,7 +150,7 @@
     "age": 2,
     "activeStatus": true,
     "birthDate": "2022-09-01",
-    "profileImageUrl": "https://example.com/images/charlie.jpg",
+    "profileImageUrl": "https://raw.githubusercontent.com/LennyCra/Webontwikkeling-Katten/main/images/9.png",
     "breed": "Abessijn",
     "hobbies": ["rennen", "spelen met andere katten", "kattenbomen beklimmen"],
     "owner": {
@@ -168,7 +168,7 @@
     "age": 3,
     "activeStatus": true,
     "birthDate": "2021-12-25",
-    "profileImageUrl": "https://example.com/images/loki.jpg",
+    "profileImageUrl": "https://raw.githubusercontent.com/LennyCra/Webontwikkeling-Katten/main/images/10.png",
     "breed": "Scottish Fold",
     "hobbies": ["klimmen", "met lasers spelen", "vogels bespieden"],
     "owner": {
