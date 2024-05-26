@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Details</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include("partials/nav") %>
+
+  <div class="container-details">
+    <h1><%= cat.name %> Details</h1>
+    <div class="cat-details">
+      <div class="cat-image-wrapper">
+        <img src="<%= cat.profileImageUrl %>" alt="<%= cat.name %>" class="cat-image-detail">
+      </div>
+      <div class="cat-info">
+        <p><strong>Name:</strong> <%= cat.name %> <button onclick="showEditForm('name')">Edit</button></p>
+        <p><strong>Breed:</strong> <%= cat.breed %></p>
+        <p><strong>Description:</strong> <%= cat.description %> </p>
+        <p><strong>Hobbies:</strong> <%= cat.hobbies.join(', ') %> </p>
+        <p><strong>Active Status:</strong> <%= cat.activeStatus ? 'Active' : 'Inactive' %></p>
+
+        <div id="editFormContainer" style="display: none;">
+          <h2>Edit Cat</h2>
+          <form id="editNameForm" action="/cat/<%= cat.id %>/edit" method="post" style="display: none;">
+            <label for="newName">Change Name:</label>
+            <input type="text" id="newName" name="newName" value="<%= cat.name %>">
+            <button type="submit">Update Name</button>
+          </form>
+         
+        </div>
+      </div>
+    </div>
+
+    <div class="owner-info">
+      <a href="/owners/<%= cat.owner.id %>"><strong>Owner Information</strong></a>
+    </div>
+
+    <a href="/">Terug naar de lijst met katten</a>
+  </div>
+  <script>
+    function showEditForm(field) {
+      if (!field) return;
+
+      // Verberg eerst alle bewerkingsformulieren
+      const forms = document.querySelectorAll('#editFormContainer form');
+      forms.forEach(form => {
+        form.style.display = 'none';
+      });
+
+      // Toon het juiste bewerkingsformulier op basis van het veld
+      const editForm = document.querySelector(`#edit${field.charAt(0).toUpperCase() + field.slice(1)}Form`);
+      if (editForm) {
+        editForm.style.display = 'block';
+      }
+
+      // Zorg ervoor dat de container zichtbaar is
+      document.getElementById('editFormContainer').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

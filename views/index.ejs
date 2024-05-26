@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Information</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include ("partials/nav") %>
+  <div class="container">
+    <h1>Cat Information</h1>
+
+    <form class="search-form" action="/" method="get" >
+      <label for="search" ></label>
+      <input placeholder="Search by name, breed, or age.." type="text" id="search" name="q" value="<%= q %>">
+      <button type="submit">Search</button>
+    </form>
+    
+    <table id="catTable">
+      <thead>
+        <tr>
+          <th data-sort="image">Image</th>
+          <th data-sort="name" class="sortable">
+            <a href="/?q=<%= q %>&sortField=name&sortDirection=<%= sortField === 'name' && sortDirection === 'asc' ? 'desc' : 'asc' %>">
+              Name <%= sortField === 'name' ? (sortDirection === 'asc' ? '▲' : '▼') : '' %>
+            </a>
+          </th>
+          <th data-sort="age" class="sortable">
+            <a href="/?q=<%= q %>&sortField=age&sortDirection=<%= sortField === 'age' && sortDirection === 'asc' ? 'desc' : 'asc' %>">
+              Age <%= sortField === 'age' ? (sortDirection === 'asc' ? '▲' : '▼') : '' %>
+            </a>
+          </th>
+          <th data-sort="breed" class="sortable">
+            <a href="/?q=<%= q %>&sortField=breed&sortDirection=<%= sortField === 'breed' && sortDirection === 'asc' ? 'desc' : 'asc' %>">
+              Breed <%= sortField === 'breed' ? (sortDirection === 'asc' ? '▲' : '▼') : '' %>
+            </a>
+          </th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <% cats.forEach(cat => { %>
+          <tr>
+            <td><img src="<%= cat.profileImageUrl %>" alt="<%= cat.name %>" class="cat-image"></td>
+            <td class="cat-name"><%= cat.name %></td>
+            <td class="cat-age"><%= cat.age %></td>
+            <td class="cat-breed"><%= cat.breed %></td>
+            <td><a href="/cat/<%= cat.id %>">Details</a></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

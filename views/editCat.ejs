@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Cat</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include ("partials/nav") %>
+
+  <div class="container-edit">
+    <h1>Edit <%= cat.name %></h1>
+    <form action="/cats/<%= cat.id %>" method="post" class="edit-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="<%= cat.name %>" required>
+      </div>
+      <div class="form-group">
+        <label for="breed">Breed:</label>
+        <input type="text" id="breed" name="breed" value="<%= cat.breed %>" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" value="<%= cat.age %>" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"><%= cat.description %></textarea>
+      </div>
+      <button type="submit" class="btn">Update Cat</button>
+      <a href="/cat/<%= cat.id %>" class="btn btn-cancel">Cancel</a>
+    </form>
+  </div>
+</body>
+</html>

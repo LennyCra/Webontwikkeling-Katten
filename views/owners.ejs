@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owners</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include ("partials/nav") %>
+
+  <div class="container">
+    <h1>All Owners</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Cats</th> <!-- Nieuwe kolom voor de katten van de eigenaar -->
+          <th>Details</th> <!-- Nieuwe kolom voor de detailkoppeling -->
+        </tr>
+      </thead>
+      <tbody>
+        <% owners.forEach(owner => { %>
+          <tr>
+            <td><%= owner.id %></td>
+            <td><%= owner.name %></td>
+            <td>
+              <% const ownerCats = cats.filter(cat => cat.owner.id === owner.id); %>
+              <% ownerCats.forEach(cat => { %>
+                <%= cat.name %><br> <!-- Toon de naam van de kat -->
+              <% }); %>
+            </td>
+            <td>
+              <a href="/owners/<%= owner.id %>">Details</a> <!-- Koppeling naar de profielpagina van de eigenaar -->
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
